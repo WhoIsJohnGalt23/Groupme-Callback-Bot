@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexSEA = /^\/Hawks SB/;botRegexKane = /^\/Gametime/;
+      botRegexSiege = /^\/siege/; botRegexSEA = /^\/Hawks SB/;botRegexKane = /^\/Gametime/; botRegexBoom = /^\/Boom/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -32,6 +32,11 @@ function respond() {
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
+    this.res.end();
+  } 
+  else if(request.text && botRegexBoom.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://68.media.tumblr.com/65b1c7e49203b41130de51bf8184b32b/tumblr_mywnofVPkf1ql0k28o5_250.gif");
     this.res.end();
   } 
   else if(request.text && botRegexKane.test(request.text)) {
