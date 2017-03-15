@@ -42,7 +42,7 @@ function respond() {
   } 
   else if(request.text && botRegexboom2.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i.makeagif.com/media/8-24-2015/xihDRY.mp4");
+    postMessage("http://stream1.gifsoup.com/view4/20150429/5203177/stone-cold-zamboni-o.gif");
     this.res.end();
   } 
   else if(request.text && botRegexboom.test(request.text)) {
