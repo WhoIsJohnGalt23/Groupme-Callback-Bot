@@ -89,7 +89,7 @@ function respond() {
   } 
   else if(request.text && botRegexSEA.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://i3.kym-cdn.com/photos/images/newsfeed/001/179/536/c7f.gif");
+    postMessage("https://media.tenor.co/images/fb3f2d1e814190100a4ae401b1660d5b/tenor.gif");
     this.res.end();
   }
   else if(request.text && botRegexCC.test(request.text)) {
