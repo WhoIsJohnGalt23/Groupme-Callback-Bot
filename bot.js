@@ -36,7 +36,7 @@ function respond() {
   } 
   else if(request.text && botRegexKane.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://giphy.com/gifs/kane-qD5TfYMe8Vl72");
+    postMessage("https://whatistheexcel.com/wooobooru/_images/4743f472cc832d2cf8b1cb2e56b434c5/9116%20-%20Raw%20autoplay_gif%20fire%20gif%20kane%20mask%20pyro%20wwf.gif");
     this.res.end();    
   }
   else if(request.text && botRegexRules.test(request.text)) {
