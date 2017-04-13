@@ -9,7 +9,8 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexSEA = /^\/Car SB/; botRegexKane = /^\/00/; botRegexboom = /^\/boom/; botRegexcueitup = /^\/cue it up/;
-      botRegexboom2 = /^\/boom2/; botRegexIce = /^\/icy/; botRegexDez = /^\/Dez otb/; botRegexJetsO = /^\/Jets O/;
+      botRegexboom2 = /^\/boom2/; botRegexIce = /^\/icy/; botRegexDez = /^\/Dez otb/; botRegexJetsO = /^\/Jets O/; botRegexIce2 = /^\/icy2/;
+      botRegexIce3 = /^\/icy3/;
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -38,6 +39,16 @@ function respond() {
   else if(request.text && botRegexDez.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media.giphy.com/media/NYEAFHB94PZQI/giphy.gif");
+    this.res.end();
+  } 
+  else if(request.text && botRegexIce2.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://25.media.tumblr.com/d2a29d990cca9de4cd4260c15545ac6f/tumblr_mpyn0k7syX1ra7vneo1_400.gif");
+    this.res.end();
+  } 
+  else if(request.text && botRegexIce3.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://mrwgifs.com/wp-content/uploads/2013/11/Vanilla-Ice-Freaky-Dance-Reaction-Gif.gif");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
