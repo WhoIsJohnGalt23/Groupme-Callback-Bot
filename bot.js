@@ -25,7 +25,12 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/mw/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();    
-  } 
+   } 
+  else if(request.text && botRegexIce.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/FzRA0A2.gif");
+    this.res.end();
+   } 
   else if(request.text && botRegexJetsO.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://d31omju6te34uu.cloudfront.net/media/catalog/product/P/1/P1-ZB-11_a.jpg");
