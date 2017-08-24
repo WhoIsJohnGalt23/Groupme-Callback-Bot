@@ -48,7 +48,7 @@ function respond() {
   } 
   else if(request.text && botRegexIce2.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://25.media.tumblr.com/d2a29d990cca9de4cd4260c15545ac6f/tumblr_mpyn0k7syX1ra7vneo1_400.gif");
+    postMessage("https://media.tenor.com/images/f985a837a0f33a148eaf7eb7b524ed4a/tenor.gif");
     this.res.end();
   } 
   else if(request.text && botRegexIce3.test(request.text)) {
